@@ -1,3 +1,13 @@
+---
+title: Codebase Explainer
+emoji: 🚀
+colorFrom: indigo
+colorTo: purple
+sdk: docker
+app_file: app.py
+pinned: false
+---
+
 # Codebase Explainer
 
 An advanced AI-powered tool to explore and understand GitHub repositories using Agentic RAG (Retrieval-Augmented Generation).
@@ -9,8 +19,7 @@ An advanced AI-powered tool to explore and understand GitHub repositories using 
 - **Agentic Workflow**: Orchestrated by LangGraph with specialized agents:
   - **Planner**: Classifies user intent.
   - **Retrieval**: Fetches relevant code chunks from ChromaDB.
-  - **Graph**: Analyzes module relationships.
-  - **Summarizer**: Fuses context into a coherent explanation using Groq (DeepSeek-R1).
+  - **Summarizer**: Fuses context into a coherent explanation using Llama 3.3.
 - **Premium UI**: Modern dark-mode interface with glassmorphism and real-time feedback.
 
 ## Setup
@@ -36,8 +45,8 @@ An advanced AI-powered tool to explore and understand GitHub repositories using 
 ## Tech Stack
 
 - **Backend**: Flask, LangChain, LangGraph
-- **LLM**: Groq (DeepSeek-R1-Distill-Llama-70B)
-- **Embeddings**: HuggingFace (BAAI/bge-small-en-v1.5)
+- **LLM**: Groq (Llama-3.3-70b-versatile)
+- **Embeddings**: Local (BAAI/bge-small-en-v1.5)
 - **Vector DB**: ChromaDB
 - **Parsing**: Tree-sitter
 - **UI**: Vanilla HTML/JS, Premium CSS
